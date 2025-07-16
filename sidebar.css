@@ -1,0 +1,438 @@
+.sidebar {
+    position: fixed;
+    left: 0px;
+    bottom: 0;
+    top: 0px;
+   background-color:black;
+    width: 280px;
+    z-index: 200;
+    padding-top: 10px;
+    padding-left: 30px;
+    height: 100vh;
+    overflow-y: auto;
+    color: white;
+    box-sizing: border-box;
+ 
+    
+}
+
+
+
+
+
+  
+.icon {
+     background-color:darkred;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+   
+    
+}
+
+.img-icon {
+    width: 37px;
+    height: 35px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    margin-right: 0px;
+    margin-top: 0;
+     vertical-align: middle;
+    margin-bottom: 10px; /* Space between icon and text */
+}
+
+.text-content{
+     display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    
+}
+
+.text-content h3{
+    margin: 0;
+    font-size: 1.3rem; /* Large title size */
+    font-weight: bold;
+    line-height: 1;
+}
+
+.text-content .des {
+    margin: 0;
+    font-size: 1rem;
+    color: #888; /* Greyish color like in the image */
+    line-height: 1;
+}
+
+
+
+
+.discover{
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+    
+
+
+
+.custom-list{
+   margin-top: 30px;
+   padding: 0;
+   list-style: none;
+}
+
+
+.custom-list li{
+    display: flex;
+   flex-direction: column;
+   gap: 5px;
+}
+
+
+.custom-list li{
+    position: relative;
+    padding-left: 35px;
+     padding: 10px 0px 10px 35px;  /* Add some vertical padding */
+    width: 100%; 
+    
+
+}
+
+.custom-list button {
+    color: white;
+    display: block;  /* Make buttons full width */
+    width: 100%;
+    text-align: left;
+    margin-bottom: 5px;
+    background-color: transparent;
+    border: transparent;
+    border-radius: 10px;
+}
+
+.custom-list button:hover{
+    background-color: rgb(19, 48, 19);
+    color: green;
+    cursor: pointer;
+    
+}
+
+.home::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+   
+    width: 20px;
+    height: 20px;
+    background-image: url(/image/home-white.svg);
+   
+   background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.home:hover::before{
+    background-image: url(/image/home-green.svg);
+}
+
+
+     
+.browse::before{
+    content: '';
+   position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url(/image/music-white.svg);
+    background-size: contain;
+    background-position: center;
+    margin-right: 8px;
+    margin-left: 0;
+    vertical-align: middle;
+
+}
+.browse:hover::before{
+    background-image: url(/image/music-green.svg);
+}
+
+.fav::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url(/image/heart-white.svg);
+    background-size: contain;
+    background-position: center;
+    margin-right: 8px;
+    margin-left: 0;
+    vertical-align: middle;
+
+}
+
+.fav:hover::before{
+    background-image: url(/image/heart-green.svg);
+}
+
+
+.playlist::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url(/image/playlist\ -white.svg);
+    background-size: contain;
+    background-position: center;
+    margin-right: 8px;
+    margin-left: 0;
+    vertical-align: middle;
+
+}
+
+.playlist:hover::before{
+    background-image: url(/image/playlist-green.svg);
+}
+
+
+.trending::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url(/image/trending-up-white.svg);
+    background-size: contain;
+    background-position: center;
+    margin-right: 8px;
+    margin-left: 0;
+    vertical-align: middle;
+
+}
+
+.trending:hover::before{
+    background-image: url(/image/trending-up-green.svg);
+}
+
+.radio::before{
+    content: '';
+   position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); 
+    width: 20px;
+    height: 20px;
+    background-image: url(/image/radio-white.svg);
+    background-size: contain;
+    background-position: center;
+    margin-right: 8px;
+    margin-left: 0;
+    vertical-align: middle;
+
+}
+.radio:hover::before{
+    background-image: url(/image/radio-green.svg);
+}
+
+
+.recent::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url(/image/clock-white.svg);
+    background-size: contain;
+    background-position: center;
+    margin-right: 8px;
+    margin-left: 0;
+    vertical-align: middle;
+
+}
+
+.recent:hover::before{
+    background-image: url(/image/clock-green.svg);
+}
+
+
+
+
+.mood-and-games{
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+.mood-and-games li{
+    display: flex;
+   flex-direction:column;
+   gap:5px;
+    position:relative;
+    padding-left: 35px;
+     padding: 10px 0px 10px 35px;  /* Add some vertical padding */
+    width: 100%;
+}
+
+.mood-and-games button{
+    background-color:transparent;
+    color: white;
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    border: transparent;
+    border-radius: 12px;
+    font-size: 15px;
+    width: 100%;
+}
+
+
+.mood-and-games button:hover{
+    cursor: pointer;
+     transform: translateY(-10%) scale(1.1);
+
+}
+
+.vibes::before{
+     content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url(/image/circle-fill2.svg);
+    background-size: contain;
+    background-position: center;
+    margin-right: 8px;
+    margin-left: 0;
+    vertical-align: middle;
+}
+
+.workout::before{
+     content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url(/image/circle-fillred.svg);
+    background-size: contain;
+    background-position: center;
+    margin-right: 8px;
+    margin-left: 0;
+    vertical-align: middle;
+}
+
+.focus::before{
+     content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url(/image/circle-fillgreen.svg);
+    background-size: contain;
+    background-position: center;
+    margin-right: 8px;
+    margin-left: 0;
+    vertical-align: middle;
+}
+.party::before{
+     content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url(/image/circle-fillpuple2.svg);
+    background-size: contain;
+    background-position: center;
+    margin-right: 8px;
+    margin-left: 0;
+    vertical-align: middle;
+}
+
+.sleep::before{
+     content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url(/image/circle-fill.svg);
+    background-size: contain;
+    background-position: center;
+    margin-right: 8px;
+    margin-left: 0;
+    vertical-align: middle;
+}
+
+.settings{
+    margin: 20px;
+}
+
+
+
+.set{
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 17px;
+    border: none;
+    color: white;
+    background-color: transparent;
+    padding: 6px;
+    border-radius: 12px;
+    width: 100%;
+}
+
+.set::before{
+    content: '⚙️';
+
+}
+.set:hover{
+    background-color: rgb(19, 48, 19);
+    color: green;
+    cursor: pointer;
+}
+
+
+
+
+.mood{
+    font-size: 12px;
+}
+ 
+
+.sidebar-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.sidebar-content::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-content::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+}
+
+.sidebar-content::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
