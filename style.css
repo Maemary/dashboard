@@ -6,6 +6,7 @@
 }
 
 body {
+    overflow-x:hidden;
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -21,19 +22,14 @@ body {
     margin-top: 0;
     padding: 40px;
     flex: 1;
-    background-color: #0f0f23; /* Change from blue to dark navy/black */
-    min-height: 100%; /* Add this to ensure full height */
-    color: white; /* Add this for text color */
+    background-color: #0f0f23;
+    min-height: 100%; 
+    color: white; 
 }
 
-
-
-
  
 
- 
-
-sidebar p{
+.sidebar p{
     color: rgb(181, 180, 180);
 }
 
@@ -50,12 +46,12 @@ sidebar p{
     display: flex;
     align-items: flex-start;
     gap: 10px;
-    width: 350px;
+    width: 400px;
     height: 100px;
     background-color:  rgb(0, 0, 23); 
     color: white;
     border-radius: 10px;
-    box-shadow: none;
+    border: 1px solid transparent;
    
 }
 
@@ -111,12 +107,13 @@ sidebar p{
     display: flex;
     align-items: flex-start;
     gap: 10px;
-    width: 350px;
+    width: 400px;
     height: 100px;
     background-color: rgb(0, 0, 23); 
     color: white;
     border-radius: 10px;
     box-shadow: none;
+    border: 1px solid transparent;
    
 }
 
@@ -144,6 +141,7 @@ sidebar p{
     color: white;
     border-radius: 10px;
     box-shadow: none;
+    border: 1px solid transparent;
    
 }
 
@@ -180,6 +178,7 @@ sidebar p{
     background-color:  rgb(0, 0, 23); 
     color: white;
     border-radius: 10px;
+    border: 1px solid transparent;
    
 }
 
@@ -238,6 +237,7 @@ sidebar p{
     background-color:  rgb(0, 0, 23); 
     color: white;
     border-radius: 10px;
+    border: 1px solid transparent;
    
 }
 
@@ -279,6 +279,7 @@ sidebar p{
     background-color:  rgb(0, 0, 23); 
     color: white;
     border-radius: 10px;
+    border: 1px solid transparent;
    
 }
 
@@ -320,6 +321,7 @@ sidebar p{
     background-color:  rgb(0, 0, 23); 
     color: white;
     border-radius: 10px;
+    border: 1px solid transparent;
    
 }
 
@@ -366,10 +368,11 @@ sidebar p{
     gap: 10px;
     width: 100%;
     height: 100px;
-    background-color:  rgb(0, 0, 23); 
+    background: linear-gradient(45deg, rgb(40, 37, 37), rgb(58, 7, 58)); 
     color: white;
     border-radius: 10px;
     box-shadow: none;
+    border: 1px solid transparent;
    
 }
 
@@ -384,7 +387,7 @@ sidebar p{
 
 .like p{
     margin-top: 50px;
-    margin-left: -70px;
+    margin-left: -105px;
     color: lightgray;
     
 }
@@ -397,6 +400,29 @@ sidebar p{
 }
 
 
+
+.fa-heart-o{
+     background-color: blueviolet;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding-top: 17px;
+    margin-top: 19px;;
+    color: white;
+    height: 30px;
+    width: 48px;
+}
+
+.try-play2{
+     background-color: dodgerblue;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding-top: 19px;
+    margin-top: 15px;;
+    color: white;
+    height: 30px;
+    width: 48px;
+}
+
 .weekly{
     margin-top: 20px;
     margin-bottom: 0;
@@ -405,10 +431,11 @@ sidebar p{
     gap: 10px;
     width: 100%;
     height: 100px;
-    background-color:  rgb(0, 0, 23); 
+    background-color:  rgb(7, 7, 57); 
     color: white;
     border-radius: 10px;
     box-shadow: none;
+    border: 1px solid transparent;
    
 }
 
@@ -417,13 +444,12 @@ sidebar p{
     margin-left: 10px;
     margin-top: 23px;
     margin-bottom: 10px;
-
     
 }
 
 .weekly p{
     margin-top: 50px;
-    margin-left: -70px;
+    margin-left: -140px;
     color: lightgray;
     
 }
@@ -443,64 +469,50 @@ footer{
 
 
 .playing{
-
     border-top: 2px solid rgb(51, 50, 50) ;
     margin-left: 280px;
     width: 100%;
     height: 100px;
     margin-top: 10px;
-   
     padding-top: 0px;
     display: flex;
     flex-direction: row;
-    flex: 1;
+    align-items: center;
+    justify-content: space-between;
     background-color: #0f0f23;
-   
-
-    
-
-    
-
+    padding: 0 20px;
 }
 
 .song{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
     flex-shrink: 0;
+    width: 300px;
 }
-
 
 .song h4{
     font-size: 16px;
-    margin-left: 10px;
-    margin-top: 25px;
-    margin-bottom: 10px;
-
-    
+    margin: 0;
+    margin-bottom: 5px;
 }
 
 .song p{
     font-size: 14px;
-    margin-top: 50px;
-    margin-left: -130px;
+    margin: 0;
     color: lightgray;
-    
 }
 
 .try{
-    margin-top: 30px;
-    margin-left: 80px;
+    margin-left: 10px;
     width: 40px;
     height: 40px;
     background-color: transparent;
     border: 1px solid transparent;
     border-radius: 10px;
-    
-    
 }
 
-    
 .heart{
     padding: 0;
     width: 18px;
@@ -509,58 +521,298 @@ footer{
 .try:hover{
     border-radius: 10px;
     background-color: rgb(50, 49, 49);
-
 }
 
-.symbols{
+#audio-player{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    max-width: 500px;
+    margin-right: 20px;
+}
+
+#operations{
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    margin-left: 100px;
+    gap: 15px;
+    order: 1;
+    margin-top: -7px;
+    margin-bottom: 10px;
+    margin-right: 1210px;
 }
 
-audio{
-    margin-top: 60px;
-    margin-left: -250px;
-    border: 1px solid transparent;
-   
-}
-audio::-webkit-media-controls-panel{
-    background-color: #0f0f23;
+#timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    width: 40%;
+    margin-right: 1210px;
     
+    order: 2;
 }
 
+#total-time{
+    width: 100%;
+    height: 10px;
+    border-radius: 20px;
+    background: #063f60;
+    position: relative;
+}
 
+#current-timeline {
+    height: 10px;
+    border-radius: 20px 0 0 20px;
+    background: #87ffc3;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
-.try-play{
-
-     border: 1px solid transparent;
-    background-color: green;
-    border-radius: 10px;
-    width: 50px;
-    height: 50px;
-    padding: auto;
-    margin-top: 20px;
-    margin-left: 40px;
-    
+#time-display {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: gray;
+    font-size: 12px;
+    width: 100%;
 }
 
 .try2{
-    margin-top: 30px;
-    margin-right: 5px;
-    margin-left: 30px;
-    width: 5px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     background-color: transparent;
     border: 1px solid transparent;
     border-radius: 10px;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .shuffle, .repeat, .skip-back, .skip-forward{
-     padding: 0;
-     margin: 0;
-    width: 20px;
-    align-items: center;
+    width: 16px;
+    height: 16px;
 }
+
+.shuffle:hover, .repeat:hover{
+    background-color:  #139d58;
+    cursor: pointer;
+    border-radius: 30%;
+
+}
+
+
+#play-button{
+    border: 1px solid transparent;
+    background-color: green;
+    border-radius: 30%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#play-button img {
+    width: 20px;
+    height: 20px;
+}
+
+#pause-button {
+    display: none;
+    border: 1px solid transparent;
+    background-color: green;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+#pause-button img {
+    width: 20px;
+    height: 20px;
+}
+
+.fa-volume-up{
+    
+border-radius: 5px;
+    margin-bottom: -25px;
+    margin-left: -220px;
+    
+
+}
+
+#volumeSlider {
+    width: 80px;
+    height: 6px;
+    background: #063f60;
+    
+    accent-color: rgb(26, 164, 26);
+}
+
+#volumeSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #87ffc3;
+    cursor: pointer;
+    border: 2px solid #063f60;
+}
+
+#volumeSlider::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #87ffc3;
+    cursor: pointer;
+    border: 2px solid #063f60;
+}
+
+@media (max-width: 770px) {
+    .sidebar{
+        display: none;
+    }
+    .main-content, .playing{
+        margin-left: 0;
+    }
+
+    .recently{
+        flex-direction: column;
+    }
+
+    .featured{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+    }
+
+    .first-song, .second-song, .third-song{
+        width: 100%;
+    }
+
+    .first-track, .second-track, .third-track, .forth-track{
+        width: 100%;
+        height: 380px;
+    }
+
+    .track-cover{
+        height: 280px;
+        width: 280px;
+    }
+    
+    .playing{
+        width: 200vw;
+        margin-left: -110px;
+        
+    }
+    
+    .song{
+        width: 30%;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    #audio-player{
+        width: 50%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 100px;;
+    }
+
+   
+}
+
+
+/*TOMORROW
+const audio = document.getElementById('audio');
+const playBtn = document.getElementById('play');
+const pauseBtn = document.getElementById('pause');
+const nextBtn = document.getElementById('next');
+const prevBtn = document.getElementById('prev');
+const queueList = document.getElementById('queue');
+
+// Step 1: Define your song queue
+const songs = [
+  { title: "Song 1", src: "audio/song1.mp3" },
+  { title: "Song 2", src: "audio/song2.mp3" },
+  { title: "Song 3", src: "audio/song3.mp3" }
+];
+
+let currentIndex = 0;
+
+// Step 2: Load a song
+function loadSong(index) {
+  audio.src = songs[index].src;
+  updateQueueUI();
+}
+
+// Step 3: Play and Pause
+playBtn.addEventListener('click', () => {
+  audio.play();
+});
+
+pauseBtn.addEventListener('click', () => {
+  audio.pause();
+});
+
+// Step 4: Next and Previous
+nextBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % songs.length;
+  loadSong(currentIndex);
+  audio.play();
+});
+
+prevBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + songs.length) % songs.length;
+  loadSong(currentIndex);
+  audio.play();
+});
+
+// Step 5: Auto play next when song ends
+audio.addEventListener('ended', () => {
+  currentIndex = (currentIndex + 1) % songs.length;
+  loadSong(currentIndex);
+  audio.play();
+});
+
+// Step 6: Display the queue
+function updateQueueUI() {
+  queueList.innerHTML = '';
+  songs.forEach((song, i) => {
+    const li = document.createElement('li');
+    li.textContent = song.title;
+    if (i === currentIndex) li.style.color = 'lime'; // highlight current song
+    li.addEventListener('click', () => {
+      currentIndex = i;
+      loadSong(currentIndex);
+      audio.play();
+    });
+    queueList.appendChild(li);
+  });
+}
+
+// Initialize
+loadSong(currentIndex);
+
+
+
+<audio id="audio"></audio>
+
+<div id="controls">
+  <button id="prev">⏮️</button>
+  <button id="play">▶️</button>
+  <button id="pause">⏸️</button>
+  <button id="next">⏭️</button>
+</div>
+
+<ul id="queue"></ul>
+*/
